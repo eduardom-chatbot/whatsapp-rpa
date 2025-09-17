@@ -860,6 +860,36 @@ Return with erro
   message: "message of error"
 }
 ```
+## Remove Participants Group
+
+> Remove participants in group
+
+
+```javascript
+//id of group, array with number of contacts
+let response = await client.removeParticipantsGroup("029363422217613551", ["556155555555", "5561966666666"]);
+
+```
+
+Return with success 
+
+```javascript
+{
+  device: "5521977777777",
+  status: 200,
+  type: 'remove-participants-group'
+}
+```
+Return with erro
+```javascript
+{
+  device: "5521977777777",
+  status: 400 | 401 | 404 | 500,
+  type: 'remove-participants-group',
+  message: "message of error"
+}
+```
+
 ## Add Admins Group
 
 > Add or Remove participants of group as admin
