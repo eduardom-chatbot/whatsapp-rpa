@@ -924,6 +924,37 @@ Return with erro
   type: 'add-group-admins'
 }
 ```
+
+## Set Picture of Group
+
+> Set picture of group
+
+
+```javascript
+//id of group, URL or the local file path or base64
+let response = await client.setGroupPicture("029363422217613551", "./logo.png");
+
+```
+
+Return with success 
+
+```javascript
+{
+  device: "5521977777777",
+  status: 200,
+  type: 'set-group-picture'
+}
+```
+Return with erro
+```javascript
+{
+  device: "5521977777777",
+  status: 400 | 401 | 404 | 500,
+  message: "message of error",
+  type: 'set-group-picture'
+}
+```
+
 ## Change Name of Group
 
 > Change name of group
