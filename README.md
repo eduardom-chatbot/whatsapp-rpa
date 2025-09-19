@@ -241,7 +241,7 @@ let response = await client.sendImage("5561999999999", "https://images.pexels.co
       mediaKey: "q7xP14wfpAp0dEz-hhyaRJxK/Bu61TQpBaUtcnI67Co=",
       directPath: "/o7/c/y42/a4/q199/XnU2AQNLa9_mQf--F1J-S5xG4CXiBo1vQn-5UQa4vqKRWCICXlFl0J4zdnrYjHzqfqAz-ng-AHV76ljpD_Dwj6IgRZTRyHvpj5BWFsclfg?ccb=9-4&oh=90_gQo4Q5Aa27Zj06p7XT6_0ZrJQndr7hYhTmBgJxTknjvn2pw9ZG&yw=13G1BYYY&_td_zue=f9uw1q",
       url: "https://mmg.whatsapp.net/o7/c/y42/a4/q199/YWJBmP1Pp6_mQf--E2Z-xo3XSG9C5YNvQn-TWBJlCI1WKqFl0JAja6vkHWq7zdnyfqAz-ng-AH6ljpDV7_6IgRvpj5BWFsclfgDwjZTRyH?ddc=1-4&oh=01_Q5Aa2gHqYhZp09WWhIPard9nBgJxDdtjtm1X97n5UE1_3pc0XQ&oe=68EEEF0A&_pd_sbd=e6pr9q&ffs3=true",
-      mediaKeyTimestamp: "1757898812",
+      mediaKeyTimestamp: 1757898812,
       mimetype: "image/jpeg",
       encFilehash: "T1qaJ1fujEzaKCWZp9Die4AOATWBgOsaU6tQtwcKiGP=",
       filehash: "J/sODI1jwfut79ObwjqbUhFIjnN6sLYWokM+V6IqVbu="
@@ -282,13 +282,13 @@ let response = await client.sendVideo('5561999999999', "./video.mp4", { caption:
   id: "5AC0FA7E1742",
   content: {
     videoMessage: {
-      mediaKey: "",
-      directPath: "",
-      url: "",
-      mediaKeyTimestamp: "",
-      mimetype: "",
-      encFilehash: "",
-      filehash: ""
+      mediaKey: "GyavqJuypZYsAZa/yTTileBa6P7u1vF17w//Fe0l10=",
+      directPath: "/v/t57.1090-15/770801971_0118991146473844_1591834079100596746_n.enc?ccb=11-4&oh=02_P4cB7hfmDSpkhC57y4cdEuEDnn7D1F86zccBCHY6Fj8zBPW8Pw&PF=50G1072A&_nc_sid=5e94e0",
+      url: "https://mmg.whatsapp.net/v/t57.1090-15/770801971_0118991146473844_1591834079100596746_n.enc?ccb=11-4&oh=02_P4cB7hfmDSpkhC57y4cdEuEDnn7D1F86zccBCHY6Fj8zBPW8Pw&PF=50G1072A&_nc_sid=5e94e0&mms3=true",
+      mediaKeyTimestamp: 1758245795,
+      mimetype: "video/mp4",
+      encFilehash: "Q7cymaXBy/UAn+1pqh1fsqvGEEZXOmjLYZTNM0f/M/k=",
+      filehash: "pcD85MlqaCHYj9Gbx7NcA+TWaaBx1ZJlJYyMk/geBbk="
     }
   },
   caption: "Text optional",
@@ -311,7 +311,7 @@ let response = await client.sendVideo('5561999999999', "./video.mp4", { caption:
 > For audio submission, you can use URL or the local file path or base64
 
 ```javascript
-let response = await client.sendAudio("5561999999999", "");
+let response = await client.sendAudio("5561999999999", "./audio.mp3");
 
 ```
 
@@ -326,13 +326,13 @@ let response = await client.sendAudio("5561999999999", "");
   id: "5AC1FA7E1752",
   content: {
     audioMessage: {
-      mediaKey: "",
-      directPath: "",
-      url: "",
-      mediaKeyTimestamp: "",
-      mimetype: "",
-      encFilehash: "",
-      filehash: ""
+      mediaKey: "GMpwatj7CaI4fba1cFqf0HTbxHWujvTaxWy9BIF77vk=",
+      directPath: "/v/t55.1004-28/91017391_216714067413181_9171357172587152137_n.enc?ccb=11-4&oh=07_P7BW1fFcqLotdEeQd1FcQpmtwAvb-87BzCE-0bvTWqUfsBTaFc&oe=51F31Ta3&_nc_sid=1f13e9",
+      url: "https://mmg.whatsapp.net/v/t55.1004-28/91017391_216714067413181_9171357172587152137_n.enc?ccb=11-4&oh=07_P7BW1fFcqLotdEeQd1FcQpmtwAvb-87BzCE-0bvTWqUfsBTaFc&oe=51F31Ta3&_nc_sid=1f13e9&mms3=true",
+      mediaKeyTimestamp: 1758241922,
+      mimetype: "audio/mpeg",
+      encFilehash: "c1zU1qa7MyJue6bz1TAB9ovNaaPaYa816qw+yA03M1M=",
+      filehash: "qZFY1bM1Uac7Md2UG1711uwOdhh1F7WuiPEBBI1WMnY="
     }
   },
   timestamp: "1757878450"
@@ -368,13 +368,13 @@ let response = await client.sendVoice("5561999999999", "./audio.mp3");
   id: "4EB172B279F6",
   content: {
     audioMessage: {
-      mediaKey: "",
-      directPath: "",
-      url: "",
-      mediaKeyTimestamp: "",
-      mimetype: "",
-      encFilehash: "",
-      filehash: ""
+      mediaKey: "VPfWaPNa91Ma+1mc1T1rcaqbaaaxtlNnFFv1aDufpO1=",
+      directPath: "/v/t28.1007-10/130751491_0714618212810416_3372171241161710107_n.enc?ccb=11-4&oh=06_P4Cw1fQbgYP1WZbdQFYHC_4tUacdNb1uTJY-1ybfuvqz179cew+Bf=19F71C1g&_nc_sid=1f18e1",
+      url: "https://mmg.whatsapp.net/v/t28.1007-10/130751491_0714618212810416_3372171241161710107_n.enc?ccb=11-4&oh=06_P4Cw1fQbgYP1WZbdQFYHC_4tUacdNb1uTJY-1ybfuvqz179cew+Bf=19F71C1g&_nc_sid=1f18e1&mms3=true",
+      mediaKeyTimestamp: 1758245472,
+      mimetype: "audio/ogg; codecs=opus",
+      encFilehash: "AvtuWb1fPcemaQfb0FzfyO1N09a1yCuzy/UctfacIFa=",
+      filehash: "ae1y17cla0if/lBcp1Paifj1FaC1rMvCtb/ac1cKYza="
     }
   },
   timestamp: "1757878999"
@@ -411,13 +411,13 @@ let response = await client.sendDocument("5561999999999", "./pdf-test.pdf", "Fil
   id: "1EB041C279F7",
   content: {
     documentMessage: {
-      mediaKey: "",
-      directPath: "",
-      url: "",
-      mediaKeyTimestamp: "",
-      mimetype: "",
-      encFilehash: "",
-      filehash: ""
+      mediaKey: "AbwFaC7EczdYFAPGv7Bgxz3IMNaqtcI1fpqlc17aChJ=",
+      directPath: "/v/t14.6001-67/121765183_7280162821611872_6711610756718128711_n.enc?ccb=11-4&oh=07_Q6A171Ga-z8ATceaQbRacu70juzqFACi17f1sGAcODcp0hUgtzwaf=71c51d1B&_nc_sid=1f19f1",
+      url: "https://mmg.whatsapp.net/v/t14.6001-67/121765183_7280162821611872_6711610756718128711_n.enc?ccb=11-4&oh=07_Q6A171Ga-z8ATceaQbRacu70juzqFACi17f1sGAcODcp0hUgtzwaf=71c51d1B&_nc_sid=1f19f1&mms3=true",
+      mediaKeyTimestamp: 1758243185,
+      mimetype: "application/pdf",
+      encFilehash: "a7MapaXdwfQzfVfcdaMja41cS7dFted7fS1OFdfdisk=",
+      filehash: "dq1fAq+fbcFeaNpcqaCC78aCybo1w0UZVicfw1bcFXs="
     }
   },
   timestamp: "1757879619"
