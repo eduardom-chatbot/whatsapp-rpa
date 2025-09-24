@@ -149,6 +149,9 @@ whatsAppRPA.create({
   },
   onMessage: (message) => { // Receive an event all the time you receive a message from some contact
     console.log(message);
+  },
+  onAnyMessage: (message) => { // Receive an event whenever you receive, send, edit, delete, or react to a message
+    console.log(message);
   }
 });
 ```
@@ -1223,12 +1226,12 @@ const client = await whatsAppRPA.create({
   }
 });
 ```
-Return of event onMessage
+Return of event onMessage or onAnyMessage
 
 ```javascript
 {
   id: '4EB17B5B1179A8CB417B',
-  event: "on-any-message",
+  event: "on-message",
   subevent: "received",
   type: "textMessage",
   isMedia: false,
@@ -1246,3 +1249,136 @@ Return of event onMessage
 }
 ```
 
+### **Delete Event**
+<br>
+
+> Receive events every time a message is deleted
+
+
+```javascript
+//event:any
+const client = await whatsAppRPA.create({
+  license: "89YSLT7O-JBOLJQTF-R956WKVP-IPXUJNT0",
+  onAnyMessage: (message) => {
+    console.log(message);
+  }
+});
+
+```
+Return of event onAnyMessage
+<br>
+
+##### **Delete for everyone**
+
+```javascript
+{
+  id: "AC017C0DD13DA65B467F53167BE51961",
+  event: "on-any-message",
+  subevent: "received",
+  type: "deletedEveryoneMessage",
+  isMedia: false,
+  pushName: "John Doe",
+  from: "5521999999999",
+  to: "5521988888888",
+  content: {
+    deletedMessage: {
+      key: {
+        fromMe: false,
+        id: "AC9917834786178C37EE1BF5FC3359C4",
+        remote: "5521999999999@c.us"
+      }
+    }
+  },
+  isGroup: false,
+  participant: "",
+  timestamp: 1758477014
+}
+```
+
+##### **Delete for me**
+
+```javascript
+{
+  id: "3E35EF9A7CF78D801CB6DF",
+  event: "on-any-message",
+  subevent: "sending",
+  type: "deletedMeMessage",
+  isMedia: false,
+  from: "5521988888888",
+  to: "5521999999999",
+  isGroup: false,
+  participant: "",
+  timestamp: 1758495088
+}
+```
+
+### **Edited message event**
+<br>
+
+> Receive an event whenever a message is edited
+
+```javascript
+//event:any
+const client = await whatsAppRPA.create({
+  license: "89YSLT7O-JBOLJQTF-R956WKVP-IPXUJNT0",
+  onAnyMessage: (event) => {
+    console.log(event);
+  }
+});
+```
+Return of event onAnyMessage
+
+```javascript
+{
+  id: "ACD6510F1E96A1023EAE0C213D3F392A",
+  event: "on-any-message",
+  subevent: "received",
+  type: "editedMessage",
+  isMedia: false,
+  pushName: "John Doe",
+  from: "5521999999999",
+  to: "5521988888888",
+  content: {
+    "editedMessage": {
+      "conversation": "Hello World!!"
+    }
+  },
+  isGroup: false,
+  participant: "",
+  timestamp: 1758494992
+}
+```
+
+### **Reacted Message Event**
+<br>
+
+> Receive an event whenever a message is reacted to
+
+```javascript
+//event:any
+const client = await whatsAppRPA.create({
+  license: "89YSLT7O-JBOLJQTF-R956WKVP-IPXUJNT0",
+  onAnyMessage: (event) => {
+    console.log(event);
+  }
+});
+```
+Return of event onAnyMessage
+
+```javascript
+{
+  id: "ACDCF6BAB95AE4D51F59CEF81CC015B3",
+  event: "on-any-message",
+  subevent: "received",
+  type: "reactionMessage",
+  from: "5521999999999",
+  content: {
+    reactionMessage: {
+      reaction: "👍🏻"
+    }
+  },
+  isGroup: false,
+  participant: "",
+  timestamp: 1758497203.677
+}
+```
